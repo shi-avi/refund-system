@@ -1,0 +1,32 @@
+.add-refund-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: right; /* RTL */
+  font-family: "Rubik", Arial, sans-serif;
+}
+
+.add-refund-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+.add-refund-row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.add-refund-button {
+  margin-top: 15px;
+  background-color: #1565c0;
+  color: white;
+  font-weight: 600;
+}
+
+.add-refund-textfield {
+  flex: 1;
+}

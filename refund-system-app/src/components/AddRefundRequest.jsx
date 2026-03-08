@@ -8,6 +8,7 @@ import {
     DialogActions
 } from "@mui/material";
 import { createRefundRequest } from "../api/refundApi"
+import "../style/AddRefundRequest.css";
 
 function AddRefundRequest({ id }) {
 
@@ -50,9 +51,8 @@ function AddRefundRequest({ id }) {
     };
 
     return (
-
-        <div>
-            <DialogTitle>הוספת בקשת החזר חדשה</DialogTitle>
+<div className="add-refund-container">
+            <DialogTitle className="add-refund-title">הוספת בקשת החזר חדשה</DialogTitle>
 
             <DialogContent sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 1 }}>
                 <TextField
@@ -61,34 +61,43 @@ function AddRefundRequest({ id }) {
                     margin="normal"
                     value={year}
                     onChange={(e) => setYear(e.target.value)}
+                    className="add-refund-textfield"
                 />
+
                 {incomes.map((income, index) => (
-                    <Box key={index} sx={{ display: "flex", flexDirection: "row", gap: 3, mt: 4 }}>
+                    <Box key={index} className="add-refund-row">
                         <TextField
                             label="חודש"
                             value={income.month}
-                            onChange={(e) =>
-                                handleIncomeChange(index, "month", e.target.value)
-                            }
+                            onChange={(e) => handleIncomeChange(index, "month", e.target.value)}
+                            className="add-refund-textfield"
                         />
 
                         <TextField
                             label="הכנסה חודשית"
                             value={income.amount}
-                            onChange={(e) =>
-                                handleIncomeChange(index, "amount", e.target.value)
-                            }
+                            onChange={(e) => handleIncomeChange(index, "amount", e.target.value)}
+                            className="add-refund-textfield"
                         />
                     </Box>
                 ))}
-                <Button variant="contained" onClick={addIncomeRow} disabled={incomes.length >= 12}>
+
+                <Button
+                    variant="contained"
+                    onClick={addIncomeRow}
+                    disabled={incomes.length >= 12}
+                    className="add-refund-button"
+                >
                     +
                 </Button>
-
             </DialogContent>
 
             <DialogActions>
-                <Button variant="contained" onClick={handleSubmit}>
+                <Button
+                    variant="contained"
+                    onClick={handleSubmit}
+                    className="add-refund-button"
+                >
                     שמור
                 </Button>
             </DialogActions>

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\RefundSystem\\RefundSystemApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{39DDFEA6-842F-4BDD-9F1C-15FEC8827881}|RefundSystemApi\\RefundSystemApi.csproj|c:\\refundsystem\\refundsystemapi\\refundsystemapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{39DDFEA6-842F-4BDD-9F1C-15FEC8827881}|RefundSystemApi\\RefundSystemApi.csproj|solutionrelative:refundsystemapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{39DDFEA6-842F-4BDD-9F1C-15FEC8827881}|RefundSystemApi\\RefundSystemApi.csproj|c:\\refundsystem\\refundsystemapi\\refundsystemapi\\models\\dto\\createrefundrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39DDFEA6-842F-4BDD-9F1C-15FEC8827881}|RefundSystemApi\\RefundSystemApi.csproj|solutionrelative:refundsystemapi\\models\\dto\\createrefundrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -162,11 +166,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 61,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\appsettings.json",
+              "RelativeDocumentMoniker": "RefundSystemApi\\appsettings.json",
+              "ToolTip": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\appsettings.json*",
+              "RelativeToolTip": "RefundSystemApi\\appsettings.json*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-08T04:48:25.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IRefundReuestRepository.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Repositories\\Interfaces\\IRefundReuestRepository.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Repositories\\Interfaces\\IRefundReuestRepository.cs",
@@ -174,12 +191,11 @@
               "RelativeToolTip": "RefundSystemApi\\Repositories\\Interfaces\\IRefundReuestRepository.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwCIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:13:15.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:13:15.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RefundRequestRepository.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Repositories\\Classes\\RefundRequestRepository.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Repositories\\Classes\\RefundRequestRepository.cs",
@@ -187,12 +203,11 @@
               "RelativeToolTip": "RefundSystemApi\\Repositories\\Classes\\RefundRequestRepository.cs",
               "ViewState": "AgIAAIAAAAAAAAAAAAAAwIgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:07:53.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:07:53.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CreateRefundRequestDto.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\DTO\\CreateRefundRequestDto.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\DTO\\CreateRefundRequestDto.cs",
@@ -200,12 +215,11 @@
               "RelativeToolTip": "RefundSystemApi\\Models\\DTO\\CreateRefundRequestDto.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T02:49:41.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T02:49:41.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RefundRequestService.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Services\\Classes\\RefundRequestService.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Services\\Classes\\RefundRequestService.cs",
@@ -213,12 +227,11 @@
               "RelativeToolTip": "RefundSystemApi\\Services\\Classes\\RefundRequestService.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAzwIsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:11:51.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:11:51.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IRefundRequestService.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Services\\Interfaces\\IRefundRequestService.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Services\\Interfaces\\IRefundRequestService.cs",
@@ -226,12 +239,11 @@
               "RelativeToolTip": "RefundSystemApi\\Services\\Interfaces\\IRefundRequestService.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAwBwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:12:25.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:12:25.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "RefundRequestController.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Controllers\\RefundRequestController.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Controllers\\RefundRequestController.cs",
@@ -239,12 +251,11 @@
               "RelativeToolTip": "RefundSystemApi\\Controllers\\RefundRequestController.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAA7wDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T17:54:51.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-05T17:54:51.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ProcessRefundDto.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\DTO\\ProcessRefundDto.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\DTO\\ProcessRefundDto.cs",
@@ -252,12 +263,11 @@
               "RelativeToolTip": "RefundSystemApi\\Models\\DTO\\ProcessRefundDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T13:10:53.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T13:10:53.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SystemBudgetService.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Services\\Classes\\SystemBudgetService.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Services\\Classes\\SystemBudgetService.cs",
@@ -265,12 +275,11 @@
               "RelativeToolTip": "RefundSystemApi\\Services\\Classes\\SystemBudgetService.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAkwDEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:16:39.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:16:39.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SystemBudget.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\Entities\\SystemBudget.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\Entities\\SystemBudget.cs",
@@ -278,12 +287,11 @@
               "RelativeToolTip": "RefundSystemApi\\Models\\Entities\\SystemBudget.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:48:19.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:48:19.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ISystemBudgetService.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Services\\Interfaces\\ISystemBudgetService.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Services\\Interfaces\\ISystemBudgetService.cs",
@@ -291,12 +299,11 @@
               "RelativeToolTip": "RefundSystemApi\\Services\\Interfaces\\ISystemBudgetService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:17:03.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:17:03.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ISystemBudgetRepository.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Repositories\\Interfaces\\ISystemBudgetRepository.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Repositories\\Interfaces\\ISystemBudgetRepository.cs",
@@ -304,12 +311,11 @@
               "RelativeToolTip": "RefundSystemApi\\Repositories\\Interfaces\\ISystemBudgetRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:18:02.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:18:02.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Program.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Program.cs",
@@ -317,12 +323,11 @@
               "RelativeToolTip": "RefundSystemApi\\Program.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAowBsAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T02:58:42.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T02:58:42.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "SystemBudgetRepository.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Repositories\\Classes\\SystemBudgetRepository.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Repositories\\Classes\\SystemBudgetRepository.cs",
@@ -330,12 +335,11 @@
               "RelativeToolTip": "RefundSystemApi\\Repositories\\Classes\\SystemBudgetRepository.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAYwC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:17:26.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:17:26.098Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "SystemBudgetController.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Controllers\\SystemBudgetController.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Controllers\\SystemBudgetController.cs",
@@ -343,12 +347,11 @@
               "RelativeToolTip": "RefundSystemApi\\Controllers\\SystemBudgetController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T01:46:32.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T01:46:32.865Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IncomeRepository.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Repositories\\Classes\\IncomeRepository.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Repositories\\Classes\\IncomeRepository.cs",
@@ -356,12 +359,11 @@
               "RelativeToolTip": "RefundSystemApi\\Repositories\\Classes\\IncomeRepository.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAYwDwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:05:56.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:05:56.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IIncomeRepository.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Repositories\\Interfaces\\IIncomeRepository.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Repositories\\Interfaces\\IIncomeRepository.cs",
@@ -369,12 +371,11 @@
               "RelativeToolTip": "RefundSystemApi\\Repositories\\Interfaces\\IIncomeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:05:28.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:05:28.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "IncomeService.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Services\\Classes\\IncomeService.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Services\\Classes\\IncomeService.cs",
@@ -382,12 +383,11 @@
               "RelativeToolTip": "RefundSystemApi\\Services\\Classes\\IncomeService.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAYwDoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:04:41.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:04:41.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IIncomeService.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Services\\Interfaces\\IIncomeService.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Services\\Interfaces\\IIncomeService.cs",
@@ -395,12 +395,11 @@
               "RelativeToolTip": "RefundSystemApi\\Services\\Interfaces\\IIncomeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T03:04:19.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:04:19.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "CitizenRepository.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Repositories\\Classes\\CitizenRepository.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Repositories\\Classes\\CitizenRepository.cs",
@@ -408,12 +407,11 @@
               "RelativeToolTip": "RefundSystemApi\\Repositories\\Classes\\CitizenRepository.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAuwEIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T02:57:59.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T02:57:59.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "IncomeController.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Controllers\\IncomeController.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Controllers\\IncomeController.cs",
@@ -421,12 +419,11 @@
               "RelativeToolTip": "RefundSystemApi\\Controllers\\IncomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T00:37:33.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T00:37:33.527Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "CitizenService.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Services\\Classes\\CitizenService.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Services\\Classes\\CitizenService.cs",
@@ -434,12 +431,11 @@
               "RelativeToolTip": "RefundSystemApi\\Services\\Classes\\CitizenService.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAqwDIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T02:56:45.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T02:56:45.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ICitizenService.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Services\\Interfaces\\ICitizenService.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Services\\Interfaces\\ICitizenService.cs",
@@ -447,12 +443,11 @@
               "RelativeToolTip": "RefundSystemApi\\Services\\Interfaces\\ICitizenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T02:56:04.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T02:56:04.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ICitizenRepository.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Repositories\\Interfaces\\ICitizenRepository.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Repositories\\Interfaces\\ICitizenRepository.cs",
@@ -460,12 +455,11 @@
               "RelativeToolTip": "RefundSystemApi\\Repositories\\Interfaces\\ICitizenRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T02:57:27.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T02:57:27.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "CitizenController.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Controllers\\CitizenController.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Controllers\\CitizenController.cs",
@@ -473,12 +467,11 @@
               "RelativeToolTip": "RefundSystemApi\\Controllers\\CitizenController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwDAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T01:51:58.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T01:51:58.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "RefundStatus.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\Enums\\RefundStatus.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\Enums\\RefundStatus.cs",
@@ -486,12 +479,11 @@
               "RelativeToolTip": "RefundSystemApi\\Models\\Enums\\RefundStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T01:48:31.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T01:48:31.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "RefundCalculationResultDto.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\DTO\\RefundCalculationResultDto.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\DTO\\RefundCalculationResultDto.cs",
@@ -503,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "PendingRequestDto.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\DTO\\PendingRequestDto.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\DTO\\PendingRequestDto.cs",
@@ -515,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "CitizenLoginDto.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\DTO\\CitizenLoginDto.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\DTO\\CitizenLoginDto.cs",
@@ -527,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "RefundRequest.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\Entities\\RefundRequest.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\Entities\\RefundRequest.cs",
@@ -539,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "CitizenDetailsDto.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\DTO\\CitizenDetailsDto.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\DTO\\CitizenDetailsDto.cs",
@@ -551,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "RefundHistoryDto.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\DTO\\RefundHistoryDto.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\DTO\\RefundHistoryDto.cs",
@@ -563,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "RefundAmountResult.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\Entities\\RefundAmountResult.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\Entities\\RefundAmountResult.cs",
@@ -575,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "BudgetController.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Controllers\\BudgetController.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Controllers\\BudgetController.cs",
@@ -587,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Data\\AppDbContext.cs",
@@ -599,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Citizen.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\Entities\\Citizen.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\Entities\\Citizen.cs",
@@ -611,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "ProcessRefundResult.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\Entities\\ProcessRefundResult.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\Entities\\ProcessRefundResult.cs",
@@ -623,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "CalculateRefundDto.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\DTO\\CalculateRefundDto.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\DTO\\CalculateRefundDto.cs",
@@ -635,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Income.cs",
               "DocumentMoniker": "C:\\RefundSystem\\RefundSystemApi\\RefundSystemApi\\Models\\Entities\\Income.cs",
               "RelativeDocumentMoniker": "RefundSystemApi\\Models\\Entities\\Income.cs",

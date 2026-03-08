@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { getRefundRequestByCitizenId } from "../api/refundApi"
+import "../style/HistoryRequest.css";
+
 
 function HistoryRequest({ id }) {
 
@@ -20,10 +22,10 @@ function HistoryRequest({ id }) {
     }, [id]);
 
     return (
-        <div >
-            <h2 style={{ marginTop: "40px" }}>היסטוריית בקשות</h2>
+       <div className="history-container">
+            <h2 className="history-title">היסטוריית בקשות</h2>
 
-            <table border="1" cellPadding="10" style={{ marginTop: "10px", borderCollapse: "collapse" }}>
+            <table className="history-table">
                 <thead>
                     <tr>
                         <th>מספר בקשה</th>
@@ -36,7 +38,7 @@ function HistoryRequest({ id }) {
                     {requestsHistory.map((req) => (
                         <tr key={req.requestId}>
                             <td>{req.requestId}</td>
-                            <td>{req.refundAmount} ₪</td>
+                            <td>₪ {req.refundAmount}</td>
                             <td>{req.status}</td>
                         </tr>
                     ))}

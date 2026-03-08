@@ -1,0 +1,29 @@
+.system-budget-container {
+  display: flex;
+  justify-content: center; /* מרכז את הכרטיס באמצע */
+  margin-top: 40px;
+  padding-top:  200PX;
+  width: 100%;
+}
+
+.system-budget-card {
+  min-width: 320px;
+  max-width: 400px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+  text-align: center; /* מרכז טקסט בעברית */
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.system-budget-title {
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+.system-budget-amount {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1565c0;
+}

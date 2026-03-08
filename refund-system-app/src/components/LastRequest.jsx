@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { getLastRefundRequestByCitizenId } from "../api/refundApi"
+import "../style/LastRequest.css";
+
 
 function LastRequest({ id }) {
 
@@ -19,17 +21,12 @@ function LastRequest({ id }) {
     }, [id]);
 
     return (
-        <div style={{
-            border: "1px solid #ccc",
-            borderRadius: "10px",
-            padding: "20px",
-            marginTop: "20px",
-            width: "400px"
-        }}>
-            <h2>הבקשה האחרונה שלך</h2>
+        <div className="last-request-container">
+
+            <h2 className="last-request-title">הבקשה האחרונה שלך</h2>
 
             {lastRequest ? (
-                <div>
+                <div className="last-request-info">
                     <p><b>מספר בקשה:</b> {lastRequest.requestId}</p>
                     <p><b>גובה הזכאות:</b> {lastRequest.refundAmount} ₪</p>
                     <p><b>סטטוס:</b> {lastRequest.status}</p>

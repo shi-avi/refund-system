@@ -7,6 +7,7 @@ import {
     DialogActions
 } from "@mui/material";
 import { createCitizen } from "../api/citizenApi"
+import "../style/AddCitizen.css";
 
 function AddCitizen() {
 
@@ -31,18 +32,17 @@ function AddCitizen() {
     };
 
     return (
-
-        <>
-            <DialogTitle>הוספת אזרח חדש</DialogTitle>
+<div className="add-citizen-container">
+            <DialogTitle className="add-citizen-title">הוספת אזרח חדש</DialogTitle>
 
             <DialogContent sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 1 }}>
-
                 <TextField
                     label="תעודת זהות"
                     fullWidth
                     margin="normal"
                     value={identityCitizen}
                     onChange={(e) => setIdentityCitizen(e.target.value)}
+                    className="add-citizen-textfield"
                 />
 
                 <TextField
@@ -51,17 +51,20 @@ function AddCitizen() {
                     margin="normal"
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
+                    className="add-citizen-textfield"
                 />
-
             </DialogContent>
 
             <DialogActions>
-                <Button variant="contained" onClick={handleSubmit}>
+                <Button
+                    variant="contained"
+                    onClick={handleSubmit}
+                    className="add-citizen-button"
+                >
                     שמור
                 </Button>
             </DialogActions>
-
-        </>
+        </div>
     );
 }
 

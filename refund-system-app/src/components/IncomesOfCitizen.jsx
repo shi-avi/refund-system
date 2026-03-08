@@ -12,6 +12,8 @@ import {
 	Divider,
 } from "@mui/material";
 import { getIncomeByCitizenByYear } from "../api/incomeApi"
+import "../style/IncomesOfCitizen.css";
+
 
 function IncomesOfCitizen({ citizenId }) {
 
@@ -30,37 +32,33 @@ function IncomesOfCitizen({ citizenId }) {
 	}, [citizenId]);
 
 	return (
-		<>
-			<CardContent>
-				<Typography variant="h6" gutterBottom>
-					הכנסות לפי שנים
-				</Typography>
+		<CardContent className="incomes-container">
+      <Typography variant="h6" gutterBottom className="incomes-title">
+        הכנסות לפי שנים
+      </Typography>
 
-				<Divider sx={{ mb: 2 }} />
+      <Divider sx={{ mb: 2 }} />
 
-				<TableContainer component={Paper}>
-					<Table>
-						<TableHead>
-							<TableRow>
-								<TableCell>Year</TableCell>
-								<TableCell align="right">Total Income</TableCell>
-							</TableRow>
-						</TableHead>
+      <TableContainer component={Paper}>
+        <Table className="incomes-table">
+          <TableHead>
+            <TableRow>
+              <TableCell align="right">שנה</TableCell>
+              <TableCell align="right">סך ההכנסות</TableCell>
+            </TableRow>
+          </TableHead>
 
-						<TableBody>
-							{incomes.map((income) => (
-								<TableRow key={income.year}>
-									<TableCell>{income.year}</TableCell>
-									<TableCell align="right">
-										₪ {income.totalIncome}
-									</TableCell>
-								</TableRow>
-							))}
-						</TableBody>
-					</Table>
-				</TableContainer>
-			</CardContent>
-		</>
+          <TableBody>
+            {incomes.map((income) => (
+              <TableRow key={income.year}>
+                <TableCell align="right">{income.year}</TableCell>
+                <TableCell align="right">₪ {income.totalIncome}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </CardContent>
 	)
 }
 

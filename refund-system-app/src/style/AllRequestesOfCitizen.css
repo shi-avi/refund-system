@@ -1,0 +1,44 @@
+.all-requests-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: right; /* RTL */
+  font-family: "Rubik", Arial, sans-serif;
+}
+
+.all-requests-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+.all-requests-table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+}
+
+.all-requests-table th,
+.all-requests-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: right;
+}
+
+.all-requests-table th {
+  background-color: #f1f3f5;
+  color: #37474f;
+  font-weight: 600;
+}
+
+.all-requests-table tr:hover {
+  background-color: #e3f2fd;
+}
+
+.status-chip {
+  font-weight: 600;
+}

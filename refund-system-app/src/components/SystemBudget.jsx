@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Typography, Card, CardContent, Box } from "@mui/material";
 import { getSystemBudget } from "../api/systemBudgetApi";
+import "../style/SystemBudget.css";
 
 function SystemBudget(refreshBudget) {
   const [budget, setBudget] = useState(null);
@@ -21,14 +22,14 @@ function SystemBudget(refreshBudget) {
   if (!budget) return <div>טוען תקציב...</div>;
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
-      <Card sx={{ minWidth: 300 }}>
+    <Box className="system-budget-container">
+      <Card className="system-budget-card">
         <CardContent>
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="h5" className="system-budget-title">
             תקציב המערכת
           </Typography>
 
-          <Typography variant="h4">
+          <Typography variant="h4" className="system-budget-amount">
             ₪ {budget.currentAmount}
           </Typography>
         </CardContent>

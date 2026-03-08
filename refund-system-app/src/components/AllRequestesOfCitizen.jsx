@@ -13,6 +13,7 @@ import {
     Divider,
 } from "@mui/material";
 import { getRefundRequestByCitizenId } from '../api/refundApi'
+import "../style/AllRequestesOfCitizen.css";
 
 
 
@@ -34,48 +35,47 @@ function AllRequestesOfCitizen({ citizenId }) {
     }, [citizenId]);
 
     return (
-        <>
-            <CardContent>
-                <Typography variant="h6" gutterBottom>
-                    כל הבקשות של האזרח
-                </Typography>
+       <CardContent className="all-requests-container">
+      <Typography variant="h6" className="all-requests-title" gutterBottom>
+        כל הבקשות של האזרח
+      </Typography>
 
-                <Divider sx={{ mb: 2 }} />
+      <Divider sx={{ mb: 2 }} />
 
-                <TableContainer component={Paper}>
-                    <Table>
-                        <TableHead>
-                            <TableRow>
-                                <TableCell>Request Id</TableCell>
-                                <TableCell>Amount</TableCell>
-                                <TableCell>Status</TableCell>
-                            </TableRow>
-                        </TableHead>
+      <TableContainer component={Paper}>
+        <Table className="all-requests-table">
+          <TableHead>
+            <TableRow>
+              <TableCell>מספר בקשה</TableCell>
+              <TableCell>סכום</TableCell>
+              <TableCell>סטטוס</TableCell>
+            </TableRow>
+          </TableHead>
 
-                        <TableBody>
-                            {citizenRequests.map((req) => (
-                                <TableRow key={req.requestId}>
-                                    <TableCell>{req.requestId}</TableCell>
-                                    <TableCell>{req.refundAmount}</TableCell>
-                                    <TableCell>
-                                        <Chip
-                                            label={req.status}
-                                            color={
-                                                req.status === "Approved"
-                                                    ? "success"
-                                                    : req.status === "Rejected"
-                                                        ? "error"
-                                                        : "warning"
-                                            }
-                                        />
-                                    </TableCell>
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-            </CardContent>
-        </>
+          <TableBody>
+            {citizenRequests.map((req) => (
+              <TableRow key={req.requestId}>
+                <TableCell>{req.requestId}</TableCell>
+                <TableCell>₪ {req.refundAmount}</TableCell>
+                <TableCell>
+                  <Chip
+                    label={req.status}
+                    className="status-chip"
+                    color={
+                      req.status === "Approved"
+                        ? "success"
+                        : req.status === "Rejected"
+                          ? "error"
+                          : "warning"
+                    }
+                  />
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </CardContent>
     )
 }
 

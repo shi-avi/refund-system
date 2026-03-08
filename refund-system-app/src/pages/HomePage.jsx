@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import { getCitizenByIdentity } from "../api/citizenApi"
 import AddCitizen from "../components/AddCitizen";
+import "../style/HomePage.css";
 
 function HomePage() {
     const [identityCitizen, setIdentityCitizen] = useState("");
@@ -25,29 +26,46 @@ function HomePage() {
     };
 
     return (
-        <div>
-            <h1>כאן מחשבים זכאות :)</h1>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 2, width: 300 }}>
+        <div className="page-container" >
+        <div className="card">
+            <h1 className="title">מערכת חישוב זכאות</h1>
+            <Box className="form-box">
                 <TextField
-                    id="outlined-citizen-id"
-                    label="הכנס תעודת זהות"
-                    type="text"
-                    value={identityCitizen}
-                    onChange={(e) => setIdentityCitizen(e.target.value)}
-                />
-                <Button variant="contained" onClick={handleSubmit}>
-                    שלח
-                </Button>
-                <Button variant="contained" onClick={() => navigate("/allRefunds")}>
-                    הכנס כפקיד
-                </Button>
-                <Button variant="outlined" onClick={() => setAddCitizen(true)}>
-                    הוספת אזרח חדש
-                </Button>
+                        label="הכנס תעודת זהות"
+                        type="text"
+                        value={identityCitizen}
+                        onChange={(e) => setIdentityCitizen(e.target.value)}
+                        fullWidth
+                    />
+
+                    <Button
+                        variant="contained"
+                        className="main-button"
+                        onClick={handleSubmit}
+                    >
+                        שלח
+                    </Button>
+
+                    <Button
+                        variant="contained"
+                        className="secondary-button"
+                        onClick={() => navigate("/allRefunds")}
+                    >
+                        כניסה כפקיד
+                    </Button>
+
+                    <Button
+                        variant="outlined"
+                        className="outline-button"
+                        onClick={() => setAddCitizen(true)}
+                    >
+                        הוספת אזרח חדש
+                    </Button>
             </Box>
             <Dialog open={addCitizen} onClose={() => setAddCitizen(false)}>
                 <AddCitizen />
             </Dialog>
+        </div>
         </div>
     )
 }

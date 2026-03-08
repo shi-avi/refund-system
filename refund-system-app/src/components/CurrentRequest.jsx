@@ -10,6 +10,7 @@ import {
 	DialogActions
 } from "@mui/material";
 import { getRefundRequestById, DoCalculation, clerkDecision } from '../api/refundApi'
+import "../style/CurrentRequest.css";
 
 function CurrentRequest({ requestId, setRefreshBudget }) {
 	const [currentRequest, setCurrentRequest] = useState(null);
@@ -69,69 +70,87 @@ function CurrentRequest({ requestId, setRefreshBudget }) {
 		}
 	};
 
+	function formatDate(dateString) {
+  if (!dateString) return "";
+  const date = new Date(dateString);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
 	return (
-		<div>
-			<CardContent>
-				<Typography variant="h6" gutterBottom>
-					בקשה נבחרת
-				</Typography>
+		
+    <div className="current-request-container">
+      <CardContent>
+        <Typography variant="h6" className="current-request-title">
+          בקשה נבחרת
+        </Typography>
 
-				<Divider sx={{ mb: 2 }} />
+        <Divider sx={{ mb: 2 }} />
 
-				{currentRequest ? (
-					<>
-						<Typography>
-							<b>Request Id:</b> {currentRequest.requestId}
-						</Typography>
+        {currentRequest ? (
+          <div className="current-request-info">
+            <Typography>
+              <b>מספר בקשה:</b> {currentRequest.requestId}
+            </Typography>
 
-						<Typography>
-							<b>Date:</b> {currentRequest.createdAt}
-						</Typography>
+            <Typography>
+              <b>תאריך:</b> {formatDate(currentRequest.createdAt)}
+            </Typography>
 
-						<Typography component="div" sx={{ mt: 1 }} >
-							<b>Status:</b>{" "}
-							<Chip
-								label={currentRequest.status}
-								color={
-									currentRequest.status === "Approved"
-										? "success"
-										: currentRequest.status === "Rejected"
-											? "error"
-											: "warning"
-								}
-							/>
-						</Typography>
-						<Button variant="contained" onClick={handleSubmit}>בצע חישוב החזר</Button>
-					</>
-				) : (
-					<Typography>אין בקשה</Typography>
-				)}
-			</CardContent>
-			<Dialog open={open} onClose={() => setOpen(false)}>
-				<DialogTitle>סכום החזר</DialogTitle>
+            <Typography component="div" sx={{ mt: 1 }} >
+              <b>סטטוס:</b>{" "}
+              <Chip
+                label={currentRequest.status}
+                className="current-request-chip"
+                color={
+                  currentRequest.status === "Approved"
+                    ? "success"
+                    : currentRequest.status === "Rejected"
+                      ? "error"
+                      : "warning"
+                }
+              />
+            </Typography>
 
-				<Typography variant="h4" textAlign="center">
-					{refundAmount && (
-						<Typography variant="h4">{refundAmount}</Typography>
-					)}
+            <Button
+              variant="contained"
+              className="current-request-button"
+              onClick={handleSubmit}
+            >
+              בצע חישוב החזר
+            </Button>
+          </div>
+        ) : (
+          <Typography>אין בקשה</Typography>
+        )}
+      </CardContent>
 
-					{errorMessage && (
-						<Typography color="error">{errorMessage}</Typography>
-					)}
+      <Dialog open={open} onClose={() => setOpen(false)}>
+        <DialogTitle className="current-request-dialog">סכום החזר</DialogTitle>
 
-				</Typography>
+        <Typography variant="h4" textAlign="center" sx={{ mb: 2 }}>
+          {refundAmount && (
+            <Typography variant="h4">{refundAmount}</Typography>
+          )}
 
+          {errorMessage && (
+            <Typography color="error">{errorMessage}</Typography>
+          )}
+        </Typography>
 
-				<DialogActions>
-					<Button variant="contained" onClick={() => clerkDecisionAction(true)}>
-						אשר בקשה
-					</Button>
-					<Button variant="contained" onClick={() => clerkDecisionAction(false)}>
-						דחה בקשה
-					</Button>
-				</DialogActions>
-			</Dialog>
-		</div>
+        <DialogActions sx={{ justifyContent: "center", mb: 2 }}>
+          <Button variant="contained" onClick={() => clerkDecisionAction(true)}>
+            אשר בקשה
+          </Button>
+          <Button variant="contained" onClick={() => clerkDecisionAction(false)}>
+            דחה בקשה
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </div>
+  
 	)
 }
 

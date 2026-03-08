@@ -5,6 +5,7 @@ import { getCitizenById } from "../api/citizenApi";
 import AddRefundRequest from "../components/AddRefundRequest";
 import LastRequest from "../components/LastRequest";
 import HistoryRequest from "../components/HistoryRequest";
+import "../style/CitizensPage.css";
 
 function CitizensPage() {
     const [citizen, setCitizen] = useState(null);
@@ -31,19 +32,36 @@ function CitizensPage() {
 
     return (
 
-        <div style={{ padding: "30px" }}>
+         <div className="citizen-page-container">
 
-            <h1>ברוך הבא {citizen.fullName}</h1>
+            <div className="citizen-card">
 
-            <Button variant="outlined" onClick={() => setAddRefundRequest(true)}>
-                הוספת בקשת החזר חדשה
-            </Button>
+                <h1 className="citizen-title">
+                    ברוך הבא {citizen.fullName}
+                </h1>
 
-            <LastRequest id={id} />
+                <Button
+                    variant="contained"
+                    className="action-button"
+                    onClick={() => setAddRefundRequest(true)}
+                >
+                    הוספת בקשת החזר חדשה
+                </Button>
 
-            <HistoryRequest id={id} />
+                <div className="section">
+                    <LastRequest id={id} />
+                </div>
 
-            <Dialog open={addRefundRequest} onClose={() => setAddRefundRequest(false)}>
+                <div className="section">
+                    <HistoryRequest id={id} />
+                </div>
+
+            </div>
+
+            <Dialog
+                open={addRefundRequest}
+                onClose={() => setAddRefundRequest(false)}
+            >
                 <AddRefundRequest id={id} />
             </Dialog>
 

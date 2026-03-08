@@ -1,15 +1,4 @@
-﻿//using RefundSystemApi.Models.DTO;
-//using RefundSystemApi.Models.Entities;
-
-//namespace RefundSystemApi.Services.Interfaces
-//{
-//    public interface ICitizenService
-//    {
-//        Task<Citizen> GetByIdentityAsync(string identityNumber);
-//        Task<CitizenDetailsDto> GetCitizenDetailsAsync(string identity);
-//    }
-//}
-using RefundSystemApi.Models.Entities;
+﻿using RefundSystemApi.Models.Entities;
 
 namespace RefundSystemApi.Services.Interfaces
 {

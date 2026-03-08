@@ -5,7 +5,8 @@ import {
 	Typography,
 	Card,
 	CardContent,
-	Stack
+	Stack,
+	Divider
 } from "@mui/material";
 import { getCitizenById } from "../api/citizenApi";
 import SystemBudget from "../components/SystemBudget";
@@ -34,42 +35,74 @@ function CitizenDetailsPage() {
 
 	}, [citizenId, requestId]);
 	return (
+<div className="page-container">
 
+			<Container maxWidth="lg">
 
-		<Container maxWidth="md" sx={{ mt: 4 }}>
-			<SystemBudget refreshBudget={refreshBudget} />
+				<SystemBudget refreshBudget={refreshBudget} />
 
-			<Typography variant="h4" fontWeight="bold" gutterBottom>
-				פרטי אזרח
-			</Typography>
+				{/* <Typography variant="h4" className="page-title">
+					פרטי אזרח
+				</Typography> */}
 
-			<Stack spacing={3}>
+				<Stack spacing={3}>
 
-				{/* פרטי אזרח */}
-				<Card>
-					<CardContent>
-						<Typography variant="h5">{citizen?.fullName}</Typography>
-					</CardContent>
-				</Card>
+					{/* פרטי אזרח */}
+					<Card className="card-section">
+						<CardContent>
+							<Typography className="citizen-name">
+								{citizen?.fullName}
+							</Typography>
+						</CardContent>
+					</Card>
 
-				{/* בקשה נבחרת */}
-				<Card>
-					<CurrentRequest requestId={requestId} setRefreshBudget={setRefreshBudget} />
-				</Card>
+					{/* בקשה נבחרת */}
+					{/* <Card className="card-section">
+						<CardContent>
+							<Typography className="card-header">
+								בקשה נוכחית
+							</Typography>
 
-				{/* הכנסות */}
-				<Card>
-					<IncomesOfCitizen citizenId={citizenId} />
-				</Card>
+							<Divider sx={{ mb: 2 }} /> */}
 
-				{/* כל הבקשות */}
-				<Card>
-					<AllRequestesOfCitizen citizenId={citizenId} />
-				</Card>
+							<CurrentRequest
+								requestId={requestId}
+								setRefreshBudget={setRefreshBudget}
+							/>
+						{/* </CardContent>
+					</Card> */}
 
-			</Stack>
+					{/* הכנסות */}
+					{/* <Card className="card-section">
+						<CardContent>
+							<Typography className="card-header">
+								הכנסות האזרח
+							</Typography>
 
-		</Container>
+							<Divider sx={{ mb: 2 }} /> */}
+
+							<IncomesOfCitizen citizenId={citizenId} />
+						{/* </CardContent>
+					</Card> */}
+
+					{/* כל הבקשות */}
+					{/* <Card className="card-section">
+						<CardContent>
+							<Typography className="card-header">
+								כל הבקשות
+							</Typography>
+
+							<Divider sx={{ mb: 2 }} /> */}
+
+							<AllRequestesOfCitizen citizenId={citizenId} />
+						{/* </CardContent>
+					</Card> */}
+
+				</Stack>
+
+			</Container>
+
+		</div>
 	)
 }
 

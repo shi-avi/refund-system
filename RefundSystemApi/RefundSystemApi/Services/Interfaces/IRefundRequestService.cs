@@ -1,20 +1,4 @@
-﻿//using RefundSystemApi.Models.DTO;
-//using RefundSystemApi.Models.Entities;
-
-//namespace RefundSystemApi.Services.Interfaces
-//{
-//    public interface IRefundRequestService
-//    {
-//        Task<List<PendingRequestDto>> GetPendingRequestsAsync();
-
-//        Task<RefundCalculationResultDto> CalculateRefundAsync(int requestId, bool clerkDecision);
-
-//        Task<RefundRequest> CreateRefundRequestAsync(CreateRefundRequestDto dto);
-//    }
-//}
-
-
-using RefundSystemApi.Models.DTO;
+﻿using RefundSystemApi.Models.DTO;
 using RefundSystemApi.Models.Entities;
 
 namespace RefundSystemApi.Services.Interfaces

@@ -1,25 +1,4 @@
-﻿//using RefundSystemApi.Repositories.Interfaces;
-//using RefundSystemApi.Services.Interfaces;
-
-//namespace RefundSystemApi.Services.Classes
-//{
-//    public class SystemBudgetService : ISystemBudgetService
-//    {
-//        private readonly ISystemBudgetRepository _systemBudgetRepository;
-//        public SystemBudgetService(ISystemBudgetRepository systemBudgetRepository)
-//        {
-//            _systemBudgetRepository = systemBudgetRepository;
-//        }
-
-//        public async Task<decimal> GetCurrentBudgetAmountAsync()
-//        {
-//            var budget = await _systemBudgetRepository.GetCurrentBudgetAsync();
-//            return budget?.CurrentAmount ?? 0;
-//        }
-//    }
-//}
-
-using RefundSystemApi.Models.Entities;
+﻿using RefundSystemApi.Models.Entities;
 using RefundSystemApi.Repositories.Interfaces;
 using RefundSystemApi.Services.Interfaces;
 

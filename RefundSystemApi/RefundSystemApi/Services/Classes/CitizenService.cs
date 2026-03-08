@@ -1,48 +1,4 @@
-﻿//using RefundSystemApi.Models.DTO;
-//using RefundSystemApi.Models.Entities;
-//using RefundSystemApi.Repositories.Interfaces;
-//using RefundSystemApi.Services.Interfaces;
-
-//namespace RefundSystemApi.Services.Classes
-//{
-//    public class CitizenService : ICitizenService
-//    {
-//        private readonly ICitizenRepository _citizenRepository;
-
-//        public CitizenService(ICitizenRepository citizenRepository)
-//        {
-//            _citizenRepository = citizenRepository;
-//        }
-//        public async Task<Citizen> GetByIdentityAsync(string identityNumber)
-//        {
-//            if (string.IsNullOrWhiteSpace(identityNumber))
-//                throw new ArgumentException("Identity number is required");
-
-//            return await _citizenRepository.GetByIdentityAsync(identityNumber);
-//        }
-//        public async Task<CitizenDetailsDto> GetCitizenDetailsAsync(string identity)
-//        {
-//            var citizen = await _citizenRepository.GetByIdentityAsync(identity);
-
-//            if (citizen == null)
-//                throw new Exception("Citizen not found");
-
-//            return new CitizenDetailsDto
-//            {
-//                FullName = citizen.FullName,
-//                Requests = citizen.RefundRequests
-//                    .Select(r => new RefundHistoryDto
-//                    {
-//                        Year = r.Year,
-//                        RefundAmount = r.RefundAmount,
-//                        Status = r.Status
-//                    }).ToList()
-//            };
-//        }
-//    }
-//}
-
-using RefundSystemApi.Models.Entities;
+﻿using RefundSystemApi.Models.Entities;
 using RefundSystemApi.Repositories.Interfaces;
 using RefundSystemApi.Services.Interfaces;
 

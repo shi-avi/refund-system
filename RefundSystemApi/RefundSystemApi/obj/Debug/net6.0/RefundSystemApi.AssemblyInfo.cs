@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RefundSystemApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1f6e655e59fcaee071d656bf126266d2db00c9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RefundSystemApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RefundSystemApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
