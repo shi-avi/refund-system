@@ -1,108 +1,149 @@
-# Full Stack Web Application
+# Refund System
 
-## Project Overview
+Full Stack application for managing refund requests.
 
-This project is a Full Stack Web Application built with:
+## Technologies
 
-Backend: .NET 6 (ASP.NET Core)  
-ORM: Entity Framework  
-Frontend: React  
-
-The backend exposes a REST API and the frontend consumes the API to display and manage data.
-
----
-
-# Technologies
-
-## Backend
-
+### Backend
 - .NET 6
 - ASP.NET Core Web API
-- Entity Framework
-- Swagger
+- Entity Framework Core
 
-## Frontend
-
+### Frontend
 - React
-- NPM
 - MUI (Material UI)
 
 ---
 
-# Project Structure
+# How to Run the Project
 
-Backend: ASP.NET Core Web API project  
-Frontend: React application  
-
-The SQL file required to create the database is located **in the root folder of the project** (not inside another folder).
+Follow the steps below to run the project locally.
 
 ---
 
-# Running the Backend
+# 1. Clone the Repository
 
-1. Open the backend project in **Visual Studio**.
+First, download the project from GitHub using Git:
 
-2. Run the project.
-
-Usually Visual Studio will automatically restore the required packages and start the server.
-
-3. The API will run locally.
-
-Swagger can be accessed at:
-
-https://localhost:7232/swagger/index.html
+```bash
+git clone https://github.com/shi-avi/refund-system.git
+cd refund-system
+```
 
 ---
 
-# Running the Frontend
+# 2. Create the Database
 
-Open a terminal inside the **React project folder** and run the following commands.
-
-Install dependencies:
+In the root folder of the project there is a SQL file:
 
 ```
+init_db.sql
+```
+
+Open this file using **SQL Server Management Studio (SSMS)** and run it.
+
+This script will create the database required for the project.
+
+Database name:
+
+```
+RefundSystemDB
+```
+
+---
+
+# 3. Configure the Backend
+
+Open the backend project in **Visual Studio**.
+
+Backend project folder:
+
+```
+RefundSystemApi
+```
+
+Open the file:
+
+```
+appsettings.json
+```
+
+Update the connection string:
+
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=RefundSystemDB;Trusted_Connection=True;MultipleActiveResultSets=true;"
+}
+```
+
+Replace:
+
+```
+YOUR_SERVER_NAME
+```
+
+with the name of your local SQL Server.
+
+Example:
+
+```
+Server=DESKTOP-XXXX
+```
+
+---
+
+# 4. Run the Backend
+
+Run the backend project using **Visual Studio**.
+
+After running the project, the API will start locally.
+
+Swagger documentation should be available at:
+
+```
+https://localhost:7232/swagger/index.html
+```
+
+---
+
+# 5. Run the Frontend (React)
+
+Navigate to the frontend folder:
+
+```
+refund-system-app
+```
+
+Install project dependencies:
+
+```bash
 npm install
 ```
 
 Install Material UI:
 
-```
+```bash
 npm install @mui/material @emotion/react @emotion/styled
 ```
 
-Run the development server:
+Run the React application:
 
-```
+```bash
 npm run dev
 ```
 
-After running the command, the React application will start locally.
-
----
-
-# Database Setup
-
-The SQL file required for the database is located in the **main project directory**.
-
-Steps:
-
-1. Open the SQL file.
-2. Run it in SQL Server Management Studio (SSMS).
-3. This will create the required database and tables.
+The application will start locally in the browser.
 
 ---
 
 # Notes
 
-- The backend must be running before using the frontend.
-- The frontend communicates with the API running locally.
-
-API base example:
-
-https://localhost:7232
+- Make sure SQL Server is running locally.
+- Make sure the backend is running before starting the frontend.
+- Verify that the connection string in `appsettings.json` points to your local SQL Server.
 
 ---
 
-# Author
+# Repository
 
-Project created as a learning Full Stack project using .NET and React.
+https://github.com/shi-avi/refund-system.git
