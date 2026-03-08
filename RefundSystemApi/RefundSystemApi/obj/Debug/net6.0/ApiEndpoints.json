@@ -1,0 +1,182 @@
+[
+  {
+    "ContainingType": "RefundSystemApi.Controllers.CitizenController",
+    "Method": "CreateCitizen",
+    "RelativePath": "api/Citizen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citizen",
+        "Type": "RefundSystemApi.Models.Entities.Citizens",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.CitizenController",
+    "Method": "GetById",
+    "RelativePath": "api/Citizen/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.CitizenController",
+    "Method": "GetCitizenByIdentity",
+    "RelativePath": "api/Citizen/identity/{identityCitizen}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identityCitizen",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.IncomeController",
+    "Method": "GetIncomeByCitizenGroupedByYear",
+    "RelativePath": "api/Income/citizen/{citizenId}/by-year",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citizenId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.RefundRequestController",
+    "Method": "CreateRefundRequest",
+    "RelativePath": "api/RefundRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RefundSystemApi.Models.DTO.CreateRefundRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.RefundRequestController",
+    "Method": "GetById",
+    "RelativePath": "api/RefundRequest/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.RefundRequestController",
+    "Method": "CalculateRefund",
+    "RelativePath": "api/RefundRequest/calculate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RefundSystemApi.Models.DTO.CalculateRefundDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.RefundRequestController",
+    "Method": "GetByCitizenId",
+    "RelativePath": "api/RefundRequest/citizen/{citizenId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citizenId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.RefundRequestController",
+    "Method": "GetLastRequest",
+    "RelativePath": "api/RefundRequest/citizen/{citizenId}/last",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citizenId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.RefundRequestController",
+    "Method": "GetPending",
+    "RelativePath": "api/RefundRequest/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.RefundRequestController",
+    "Method": "ProcessRefund",
+    "RelativePath": "api/RefundRequest/process",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RefundSystemApi.Models.DTO.ProcessRefundDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RefundSystemApi.Controllers.SystemBudgetController",
+    "Method": "GetCurrent",
+    "RelativePath": "api/SystemBudget",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

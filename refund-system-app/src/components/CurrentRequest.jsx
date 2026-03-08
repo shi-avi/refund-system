@@ -1,0 +1,138 @@
+import { useEffect, useState } from "react";
+import {
+	Typography,
+	CardContent,
+	Chip,
+	Divider,
+	Button,
+	Dialog,
+	DialogTitle,
+	DialogActions
+} from "@mui/material";
+import { getRefundRequestById, DoCalculation, clerkDecision } from '../api/refundApi'
+
+function CurrentRequest({ requestId, setRefreshBudget }) {
+	const [currentRequest, setCurrentRequest] = useState(null);
+	const [open, setOpen] = useState(false);
+	const [refundAmount, setRefundAmount] = useState(null);
+	const [errorMessage, setErrorMessage] = useState(null);
+
+	useEffect(() => {
+		loadRequest();
+	}, [requestId]);
+
+	const handleSubmit = async () => {
+		const newCalculation = {
+			"citizenId": currentRequest.citizenId,
+			"year": currentRequest.year
+		};
+
+		try {
+			const result = await DoCalculation(newCalculation);
+			setRefundAmount(result.refundAmount);
+			setErrorMessage(null);
+		} catch (error) {
+			if (error.response && error.response.data) {
+				setErrorMessage(error.response.data);
+			} else {
+				setErrorMessage("שגיאה בחישוב ההחזר");
+			}
+			setRefundAmount(null);
+		}
+		setOpen(true);
+	};
+
+	const clerkDecisionAction = async (e) => {
+		setOpen(false)
+		const newClerkDecision = {
+			"requestId": requestId,
+			"clerkDecision": e
+		};
+
+		try {
+			await clerkDecision(newClerkDecision);
+			await loadRequest();
+
+
+		} catch (error) {
+			console.error(error.response.data);
+		}
+	};
+
+	const loadRequest = async () => {
+		try {
+			const requestRes = await getRefundRequestById(requestId);
+			setCurrentRequest(requestRes);
+			setRefreshBudget(true)
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
+	return (
+		<div>
+			<CardContent>
+				<Typography variant="h6" gutterBottom>
+					בקשה נבחרת
+				</Typography>
+
+				<Divider sx={{ mb: 2 }} />
+
+				{currentRequest ? (
+					<>
+						<Typography>
+							<b>Request Id:</b> {currentRequest.requestId}
+						</Typography>
+
+						<Typography>
+							<b>Date:</b> {currentRequest.createdAt}
+						</Typography>
+
+						<Typography component="div" sx={{ mt: 1 }} >
+							<b>Status:</b>{" "}
+							<Chip
+								label={currentRequest.status}
+								color={
+									currentRequest.status === "Approved"
+										? "success"
+										: currentRequest.status === "Rejected"
+											? "error"
+											: "warning"
+								}
+							/>
+						</Typography>
+						<Button variant="contained" onClick={handleSubmit}>בצע חישוב החזר</Button>
+					</>
+				) : (
+					<Typography>אין בקשה</Typography>
+				)}
+			</CardContent>
+			<Dialog open={open} onClose={() => setOpen(false)}>
+				<DialogTitle>סכום החזר</DialogTitle>
+
+				<Typography variant="h4" textAlign="center">
+					{refundAmount && (
+						<Typography variant="h4">{refundAmount}</Typography>
+					)}
+
+					{errorMessage && (
+						<Typography color="error">{errorMessage}</Typography>
+					)}
+
+				</Typography>
+
+
+				<DialogActions>
+					<Button variant="contained" onClick={() => clerkDecisionAction(true)}>
+						אשר בקשה
+					</Button>
+					<Button variant="contained" onClick={() => clerkDecisionAction(false)}>
+						דחה בקשה
+					</Button>
+				</DialogActions>
+			</Dialog>
+		</div>
+	)
+}
+
+export default CurrentRequest
